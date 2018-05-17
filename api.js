@@ -23,8 +23,24 @@ app.post('/createListing', (req, res) => {
     // SOME FUNCTIONS
     // insert data into listings
 
-    resb = {itemID : "123"}
-    res.send(JSON.stringify(resb));
+    app.post('/createListing', (req, res) => {
+        // let body = JSON.parse(req.body.toString());
+        // body = {
+        //     artistName: "aisha",
+        //     name: 'print',
+        //     price: 100,
+        //     cat: "Prints",
+        //     blurb: "cool print",
+        //     quantity: 1,
+        //     imageURL1: '/items/aisha.jpg',
+        //     imageURL2: '/items/pillow.jpg',
+        //     imageURL3: '/items/embroidery.jpg',
+        // }
+
+        let resB = {itemID: "123"};
+        res.send(JSON.stringify(resB))
+    })
+    
 })
 
 
